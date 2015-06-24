@@ -3,9 +3,13 @@
         <title>DavidH's Blog</title>
     </head>
     <body>
-      <div>
-        <p>First Paragraph!</p>
-      </div>
+        {% for post in posts %}
+          <div>
+              <p>published: {{ post.published_date }}</p>
+              <h1><a href="">{{ post.title }}</a></h1>
+              <p>{{ post.text|linebreaks }}</p>
+          </div>
+        {% endfor %}
 
     </body>
 </html>
