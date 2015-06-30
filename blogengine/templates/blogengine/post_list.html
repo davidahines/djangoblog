@@ -1,8 +1,19 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/static/css/main.css">
 <html>
     <head>
         <title>DavidH's Blog</title>
     </head>
+
     <body>
+      <div id="top-nav">
+        <ul id="top-nav-list">
+          <li>Blog</li>
+        </ul>
+
+      </div>
+      <div id="main">
         {% for post in posts %}
           <div>
               <p>published: {{ post.published_date }}</p>
@@ -10,6 +21,6 @@
               <p>{{ post.text|linebreaks }}</p>
           </div>
         {% endfor %}
-
+      </div>
     </body>
 </html>
