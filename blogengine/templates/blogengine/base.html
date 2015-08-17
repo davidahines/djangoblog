@@ -1,22 +1,42 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="/static/css/main.css">
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+-->
 <html>
     <head>
         <title>DavidH's Blog</title>
     </head>
+
     <body>
-    <div id="top-nav">
-      <ul id="top-nav-list">
-        <li>Blog</li>
-      </ul>
 
-    </div>
-    <div id="main">
-      {% block content %}
-      {% endblock %}
-    </div>
+      <div id="top-nav">
+        <ul id="top-nav-list">
+          <li>Blog</li>
+        </ul>
+      </div>
 
+      <div id="main">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+      <div id="side-nav">
+        <div id="side-circle" class="circle" style="background-image:
+          url('/static/img/earth_icon.png')">
+        </div>
+        <div id="side-nameplate" class="side-box" style="background-image:
+          url('/static/img/signature_390x160.png')">
+        </div>
+        <ul id="side-nav-list">
+          <li><a href="https://twitter.com/davidahines">Twitter</a></li>
+          <li><a href="http://stackoverflow.com/users/383986/davidahines">Stack&nbspOverflow</a></li>
+          <li><a href="https://github.com/davidahines">Github</a></li>
+        </ul>
+      </div>
 
     </body>
 </html>
