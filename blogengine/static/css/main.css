@@ -12,8 +12,14 @@
 }
 #top-nav-list{
     list-style-type: none;
-    margin:inherit;
+    margin:0px;
+    padding-left = 0px;
     display: inline;
+
+}
+body{
+  background-color: #EEE;
+  font-family: Helvetica, Arial, sans-serif;
 }
 .inline_li{
   display: inline
@@ -22,6 +28,10 @@
 #side-nav-list{
     list-style-type: none;
 
+}
+a{ text-decoration: none;}
+.selected{
+  font-weight: bold;
 }
 #side-nav{
   float: right;
