@@ -4,7 +4,7 @@
   float: left;
 }
 #top-nav{
-  width: 100%;
+  width: 710;
   z-index: 999;
   background-color: #795548;
   color: #EFEBE9;
@@ -35,7 +35,7 @@ a{ text-decoration: none;}
 }
 #side-nav{
   float: right;
-  width: 110px;
+  width: 160px;
   border-left-width: medium;
   border-left-style: solid;
   border-left-color: #DEB887;
@@ -45,18 +45,36 @@ a{ text-decoration: none;}
 }
 .side-box{
   display: block;
-  width: 150;
+  width: 141;
   height: 40px;
-  margin-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 141px 29px;
   background-color: #B2936C;
-  border: 5px solid #DEB887;
-  right:0;
-  position: absolute;
+  /*border: 5px solid #DEB887;*/
+  /*margin-top: 160px;*/
+  /*right:0;*/
+  /*position: absolute;*/
   /*box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);*/
+}
+#inner{
+  width: 710;
+  background-color: #FCF8F3;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 10px 5px #888888;
+}
+#outer{
+  width: 100%;
+  background-image: url("paper.gif");
+  background-repeat: repeat-y;
+}
+#footer{
+  clear:both;
+  background-color: #795548;
 }
 .circle {
   display: block;
@@ -77,14 +95,14 @@ a {
   color: #F5EADB;
 }
 #side-circle{
-  position: absolute;
-  right: 0;
+  /*position: absolute;
+  right: 0;*/
 }
 
 #side-nav-list{
-  padding-top: 200px;
+  /*padding-top: 200px;*/
   right: 0;
-  position: absolute;
+  /*position: absolute;*/
   padding-right: 10px;
 
 }
