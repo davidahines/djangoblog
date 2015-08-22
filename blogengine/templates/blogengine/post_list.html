@@ -2,8 +2,9 @@
 {% block content %}
   {% for post in posts %}
     <div>
+
+      <h1><a class="dark_links" href="{% url "post_detail" pk=post.pk %}">{{ post.title }}</a></h1>
       <p><time datetime="2015-08-08">{{ post.published_date }}</time></p>
-      <h1><a href="{% url "post_detail" pk=post.pk %}">{{ post.title }}</a></h1>
       <p>{{ post.text|linebreaks }}</p>
     </div>
   {% endfor %}

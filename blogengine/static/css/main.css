@@ -1,10 +1,10 @@
 #main {
-  max-width: 600px;
+  max-width: 640px;
   margin: 0;
   float: left;
 }
 #top-nav{
-  width: 710;
+  width: 800;
   z-index: 999;
   background-color: #795548;
   color: #EFEBE9;
@@ -43,9 +43,22 @@ a{ text-decoration: none;}
   overflow: visible;
   background-color: #B2936C;
 }
+
+p{
+  margin: 15px;
+  color: #3C2910;
+}
+h1{
+  border-bottom: 1px;
+  margin: 16px;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+  border-bottom-color: #F4E7D6;
+  color: #271B0B;
+}
 .side-box{
   display: block;
-  width: 141;
+  width: 140;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -61,7 +74,7 @@ a{ text-decoration: none;}
   /*box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);*/
 }
 #inner{
-  width: 710;
+  width: 800;
   background-color: #FCF8F3;
   margin-left: auto;
   margin-right: auto;
@@ -91,8 +104,11 @@ a{ text-decoration: none;}
   /*box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);*/
 
 }
-a {
+.light_links {
   color: #F5EADB;
+}
+.dark_links {
+  color: #3C2910;
 }
 #side-circle{
   /*position: absolute;
