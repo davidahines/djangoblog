@@ -1,0 +1,47 @@
+{% extends "blogengine/base.html" %}
+{% block content %}
+
+<!--<form action="/your-name/" method="post">
+    {% csrf_token %}
+    {{ form | linebreaks}}
+    <input type="submit" value="Submit" />
+</form>
+
+
+<form action="blogengine/contact_form/" method="post">
+    {{ form.non_field_errors }}
+    <div class="fieldWrapper">
+        {{ form.subject.errors }}
+        <label for="contact_subject">Subject:</label>
+        {{ form.subject }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.subject.errors }}
+        <label for="contact_name">Name:</label>
+        {{ form.subject }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.sender.errors }}
+        <label for="contact_email">Email:</label>
+        {{ form.sender }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.message.errors }}
+        <label for="contact_message">Message:</label>
+        {{ form.message }}
+    </div>
+    <p><input type="submit" value="Send message" /></p>
+</form>
+-->
+<h1>Contact Form</h1>
+<p>Feel free to contact me using the form below regarding any and all content
+of this site, questions of availability for positions, or rates for contractual work.</p>
+
+{% for field in form %}
+        <div class="fieldWrapper">
+            {{ field.errors }}
+            <label class="basic_label" for="{{ field.name }}">{{ field.label }}</label></br> {{ field }}
+        </div>
+    {% endfor %}
+    <p><input class="basic_button" type="submit" value="Send message" /></p>
+{% endblock %}
