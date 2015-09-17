@@ -29,3 +29,5 @@ def contact_form(request):
         form = ContactForm()
 
     return render(request, 'blogengine/contact.html', {'form': form})
+def about(request):
+    return render(request, 'blogengine/about.html')
